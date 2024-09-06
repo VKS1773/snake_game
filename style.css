@@ -6,21 +6,20 @@ body{
     align-items: center;
     margin:0;
     background-color: black;
+  }
+  .snake{
+    background-color:#944040;
+    border:.25vmin solid black;
 }
-
-#game-board{
+.food{
+    background-color: aqua;
+    border:.25vmin solid black;
+}
+  #game-board{
     background-color: white;
     width:100vmin;
     height:100vmin;
     display:grid;
-    grid-template-rows: repeat(21 1fr);
+    grid-template-rows: repeat(21,1fr);
     grid-template-columns: repeat(21,1fr);
-}
-.snake{
-    background-color:#2fc429;
-    border:.25vmin solid rgb(0, 0, 0);
-}
-.food{
-    background-color: aqua;
-    border:.25vmin solid rgb(139, 179, 139);
 }
