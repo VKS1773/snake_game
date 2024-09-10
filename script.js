@@ -27,11 +27,13 @@ function main(currentTime) {
 
 window.requestAnimationFrame(main);
 
+//update snake
 function update() {
   updateSnake();
   updateFood();
 }
 
+//draw game
 function draw() {
   gameBoard.innerHTML = "";
   drawSnake(gameBoard);
